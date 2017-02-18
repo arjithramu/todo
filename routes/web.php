@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/page','todoController@tod');
+Route::post('/page','todoController@save');
+Route::get('/show','todoController@view');
+Route::get('/delete/{id}','todoController@delete');
+Route::get('/edit/{id}','todoController@edit');
+Route::post('/update','todoController@update');
